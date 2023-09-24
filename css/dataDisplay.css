@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
 }
 
@@ -19,7 +19,7 @@ body {
   text-align: center;
   background-color: rgb(43, 43, 43);
   color: white;
-  /* cursor: pointer; */
+  
 }
 
 .grid-item img {
@@ -50,4 +50,137 @@ th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+} */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #302b63, #24243e, #0f0d16);
+  position: relative;
+  overflow: auto;
+  color: white; /* Setting default text color to white */
+}
+
+#artists-container,
+#albums-container,
+#songs-container {
+  margin: 2em 1em;
+}
+
+#artists-container,
+#albums-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2em;
+}
+
+.grid-item {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  padding: 1.5em;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Semi-transparent dark background to give depth */
+  transition: 0.5s;
+  border-radius: 2em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+#songs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#songs-container table {
+  width: 100%;
+  max-width: 1100px; /* Further increased max width for larger table */
+  border-collapse: separate;
+  border-spacing: 0 15px; /* Increased vertical spacing between rows */
+  margin-top: 2em;
+  background: none;
+  table-layout: fixed;
+}
+
+td,
+th {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+  padding: 24px 25px; /* Increased padding for more space */
+  font-size: 1.2em; /* Bigger font size for better visibility */
+  line-height: 1.5; /* Improved line height for readability */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th[data-column="song"],
+td[data-column="song"] {
+  width: 600px; /* Increased width */
+}
+
+th[data-column="duration"],
+td[data-column="duration"] {
+  width: 150px; /* Increased width */
+}
+
+th[data-column="artists"],
+td[data-column="artists"] {
+  width: 250px; /* Increased width */
+}
+
+th[data-column="feat"],
+td[data-column="feat"] {
+  width: 200px; /* Increased width */
+}
+
+th[data-column="album"],
+td[data-column="album"] {
+  width: 300px; /* Increased width */
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  padding: 25px 25px; /* Increased padding for headers */
+}
+
+tr {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadows for depth */
+  border-radius: 12px; /* Slightly larger rounded corners for rows */
+  transition: background 0.3s;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker hover for better effect */
+}
+
+h1 {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 2em;
 }

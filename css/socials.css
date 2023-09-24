@@ -1,6 +1,6 @@
 .icon-wrapper {
-  position: fixed;
-  top: 0.625em; /* 10px -> 0.625em assuming base font-size is 16px */
+  position: absolute;
+  top: 2.625em; /* 10px -> 0.625em assuming base font-size is 16px */
   right: 0.625em;
   z-index: 1000;
 }
