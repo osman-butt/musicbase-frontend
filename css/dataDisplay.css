@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+#artists-container,
+#albums-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  margin: 1em 2em 1em 2em;
+}
+
+.grid-item {
+  box-shadow: 1px 1px 8px var(--black-shadow);
+  padding: 1.5em;
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 2em;
+  text-align: center;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  /* cursor: pointer; */
+}
+
+.grid-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.data-text {
+  color: white;
+}
+
+#songs-container {
+  background-color: white;
+  margin: auto;
+  width: 90%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
