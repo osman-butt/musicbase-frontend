@@ -1,5 +1,5 @@
-// const endpoint = "https://musicbase-app.azurewebsites.net/api/v1";
-const endpoint = "http://localhost:3000/api/v1";
+const endpoint = "https://musicbase-app.azurewebsites.net/api/v1";
+// const endpoint = "http://localhost:3000/api/v1";
 
 async function getSearchedArtists(searchBy, searchValue) {
   const response = await fetch(
