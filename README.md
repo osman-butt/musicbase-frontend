@@ -27,7 +27,7 @@ OR
 
 * Clone the repository to your local machine using the following command in your terminal:
 ```bash
-git clone https://github.com/osman-butt/musicbase-frontend.git)https://github.com/osman-butt/musicbase-frontend.git
+git clone https://github.com/osman-butt/musicbase-frontend.git
 ```
 
 ## Running the App
