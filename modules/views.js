@@ -10,6 +10,7 @@ function showAlbums(albums) {
 
 function showSongs(songs) {
   const table = document.querySelector("#songs-container");
+
   table.innerHTML = "";
   table.insertAdjacentHTML(
     "beforeend",
@@ -39,7 +40,7 @@ function showArtist(artist) {
 
 function showAlbum(album) {
   const grid = document.querySelector("#albums-container");
-  const artists = album.artists.map(artist => artist.artistName);
+  const artists = album.artists.map((artist) => artist.artistName);
   const html = /*html*/ `
     <article class="grid-item">
       <img src="${album.albumImage}" />
@@ -53,8 +54,8 @@ function showAlbum(album) {
 
 function showSong(song) {
   const grid = document.querySelector("#songs-container");
-  const artists = song.artists.map(artist => artist.artistName);
-  const featArtists = song.featuredArtists.map(artist => artist.artistName);
+  const artists = song.artists.map((artist) => artist.artistName);
+  const featArtists = song.featuredArtists.map((artist) => artist.artistName);
   const html = /*html*/ `
     <tr class="table-row">
       <td class="col1">${song.songName}</td>
