@@ -55,14 +55,12 @@
 
 /* For devices smaller than 600px: */
 @media only screen and (max-width: 600px) {
-  /* Adjust font-size, margins, paddings, etc., here for smaller devices. */
-
   .songs-table {
-    overflow-x: auto; /* Horizontal scrolling for tables */
+    overflow-x: auto;
   }
 
   .glass-btn img {
-    width: 4em; /* Adjusted image size */
+    width: 4em;
   }
 }
 
@@ -70,19 +68,15 @@
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   #artists-container,
   #albums-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 items in a row */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #imageGallery {
     max-width: 90%;
   }
 
-  .songs-table {
-    /* Any adjustments you want for this viewport range. */
-  }
-
   .glass-btn img {
-    width: 4.5em; /* Adjusted image size */
+    width: 4.5em;
   }
 }
 
@@ -90,19 +84,15 @@
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
   #artists-container,
   #albums-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 items in a row */
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #imageGallery {
     max-width: 95%;
   }
 
-  .songs-table {
-    /* Any adjustments you want for this viewport range. */
-  }
-
   .glass-btn img {
-    width: 5em; /* Adjusted image size */
+    width: 5em;
   }
 }
 
@@ -116,5 +106,4 @@
   #imageGallery {
     max-width: 100%;
   }
-
-
+}
