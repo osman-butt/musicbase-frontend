@@ -32,3 +32,29 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.artistCard {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  overflow: hidden; /* This ensures that the name doesn't overflow beyond the image */
+  border-radius: 0.5rem;
+}
+
+.artistName {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Partially transparent black */
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.3s; /* Smooth transition for hover effects */
+}
+
+.artistCard:hover .artistName {
+  bottom: 25%; /* On hover, the name will move upwards */
+}
