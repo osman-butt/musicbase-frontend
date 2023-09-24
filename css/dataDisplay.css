@@ -80,3 +80,8 @@ tr:nth-child(even) {
 #songs-container:empty {
   display: none;
 }
+
+.subtext {
+  opacity: 0.7;
+  font-size: 14px;
+}
