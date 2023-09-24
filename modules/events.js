@@ -6,7 +6,7 @@ import {
 } from "./rest-services.js";
 
 async function searchClicked(event) {
-  document.querySelector(".artistName").scrollIntoView();
+  event.preventDefault();
   const searchValue = document.querySelector("#searchInput").value;
   const searchBy = document.querySelector("#searchType").value;
   console.log(searchValue);
