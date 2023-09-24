@@ -1,0 +1,26 @@
+@media screen and (min-width: 600px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
