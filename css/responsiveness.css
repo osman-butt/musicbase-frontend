@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   #artists-container,
   #albums-container {
     grid-template-columns: 1fr 1fr;
@@ -22,5 +22,88 @@
   #artists-container,
   #albums-container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+} */
+/* Existing Styles for Artists & Albums */
+@media screen and (min-width: 600px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* For devices smaller than 600px: */
+@media only screen and (max-width: 600px) {
+  .songs-table {
+    overflow-x: auto;
+  }
+
+  .glass-btn img {
+    width: 4em;
+  }
+}
+
+/* For devices between 600px and 900px: */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #imageGallery {
+    max-width: 90%;
+  }
+
+  .glass-btn img {
+    width: 4.5em;
+  }
+}
+
+/* For devices between 901px and 1200px: */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #imageGallery {
+    max-width: 95%;
+  }
+
+  .glass-btn img {
+    width: 5em;
+  }
+}
+
+/* For devices larger than 1200px: */
+@media only screen and (min-width: 1201px) {
+  #artists-container,
+  #albums-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 items in a row */
+  }
+
+  #imageGallery {
+    max-width: 100%;
   }
 }

@@ -1,25 +1,39 @@
 body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
   margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #302b63, #24243e, #0f0d16);
+  position: relative;
+  overflow: auto;
+  color: white;
+}
+
+#artists-container,
+#albums-container,
+#songs-container {
+  margin: 2em 1em;
 }
 
 #artists-container,
 #albums-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2em;
-  margin: 1em 2em 1em 2em;
 }
 
 .grid-item {
-  box-shadow: 1px 1px 8px var(--black-shadow);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
   padding: 1.5em;
-  background-color: white;
+  background: rgba(0, 0, 0, 0.4);
   transition: 0.5s;
   border-radius: 2em;
   text-align: center;
-  background-color: rgb(43, 43, 43);
-  color: white;
-  /* cursor: pointer; */
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
 }
 
 .grid-item img {
@@ -31,23 +45,38 @@ body {
   display: block;
 }
 
-.data-text {
-  color: white;
-}
-
 #songs-container {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
   margin: auto;
   width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  padding: 1em;
 }
 
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: left;
-  padding: 8px;
+  padding: 12px 15px;
+  font-size: 1.1em;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+th {
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+#songs-container:empty {
+  display: none;
 }
