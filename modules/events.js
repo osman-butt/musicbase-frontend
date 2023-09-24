@@ -12,7 +12,7 @@ function autoScroll() {
 
 async function searchClicked(event) {
   const searchValue = document.querySelector("#searchInput").value;
-  const searchBy = document.querySelector("#sortOptions").value;
+  const searchBy = document.querySelector("#searchType").value;
   console.log(searchValue);
   console.log(searchBy);
   const artists = await getSearchedArtists(searchBy, searchValue);

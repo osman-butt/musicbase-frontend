@@ -52,19 +52,19 @@
     </div>
 
     <!-- Search Bar and Button -->
+    <!-- Search Bar, Dropdown, and Button -->
     <div class="searchContainer">
-      <input type="text" placeholder="Search for music..." id="searchInput" />
-      <button id="searchButton">Search</button>
-    </div>
+    <input type="text" placeholder="Search for music..." id="searchInput" />
+    
+    <!-- Search Type Dropdown -->
+    <label for="searchType">Choose:</label>
+    <select id="searchType">
+        <option value="artist">Artist</option>
+        <option value="album">Album</option>
+        <option value="song">Song</option>
+    </select>
 
-    <!-- Sort Dropdown -->
-    <div class="sortContainer">
-      <label for="sortOptions">Search by</label>
-      <select id="sortOptions">
-        <option value="artistName">Artist name</option>
-        <option value="albumName">Album name</option>
-        <option value="songName">Song name</option>
-      </select>
+    <button id="searchButton">Search</button>
     </div>
 
     <!--Social media icons-->
