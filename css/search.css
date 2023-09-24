@@ -1,4 +1,5 @@
 /* search.css */
+
 .searchContainer {
   margin: 2rem auto 1rem auto;
   display: flex;
@@ -12,22 +13,59 @@
   border-radius: 0.25rem;
   border: 1px solid #ddd;
   font-size: 1rem;
-  width: 50%;
+  width: 40%; /* Adjusted width to accommodate dropdown */
+}
+
+#searchType {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  border: 1px solid #ddd; /* Border for distinction */
+  border-radius: 0.5rem; /* Matching border radius */
+  background-color: #24243e;
+  color: white; /* Text color */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  appearance: none; /* This removes default browser styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("path-to-your-icon/if-you-want-an-arrow-icon.png"); /* If you want an arrow icon */
+  background-repeat: no-repeat;
+  background-position: 95% center; /* Positioning the icon, if you have one */
+}
+
+#searchType:hover {
+  border-color: #bbb; /* Slightly darker border on hover */
+}
+
+label[for="searchType"] {
+  color: white;
+  margin-right: 0.5rem; /* Optional: Some space between the label and the dropdown */
 }
 
 #searchButton {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 2.5rem; /* Bigger padding */
+  font-size: 1.2rem; /* Bigger text */
   border: none;
-  border-radius: 0.25rem;
-  background-color: #24243e;
+  border-radius: 0.5rem; /* Slightly rounded */
+  background: linear-gradient(
+    135deg,
+    #573399,
+    #302b63
+  ); /* Gradient background */
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s; /* Transition for all properties */
 }
 
 #searchButton:hover {
-  background-color: #302b63;
+  background: linear-gradient(
+    135deg,
+    #463288,
+    #221a50
+  ); /* Darker gradient on hover */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Lesser shadow on hover for "pressed" effect */
 }
+
 /* Search Results Container */
 #searchResults {
   display: flex;
