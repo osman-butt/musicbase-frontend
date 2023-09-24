@@ -1,0 +1,39 @@
+/* base.css */
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #302b63, #24243e, #0f0d16);
+  position: relative;
+  overflow: auto;
+}
+
+body::before,
+body::after,
+#waveMid {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::before {
+  top: 20%;
+  height: 40%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%2324243e" fill-opacity="1" d="M0,64L60,69.3C120,75,240,85,360,112C480,139,600,213,720,213.3C840,213,960,139,1080,117.3C1200,96,1320,128,1380,144L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
+}
+
+#waveMid {
+  top: 50%;
+  height: 40%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230f0d16" fill-opacity="1" d="M0,192L60,202.7C120,213,240,235,360,240C480,245,600,235,720,213.3C840,192,960,160,1080,138.7C1200,117,1320,107,1380,101.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
+}
+
+body::after {
+  top: 80%;
+  height: 40%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%2324243e" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,80C480,107,600,181,720,181.3C840,181,960,107,1080,85.3C1200,64,1320,96,1380,112L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
+}

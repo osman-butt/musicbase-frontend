@@ -1,0 +1,75 @@
+.icon-wrapper {
+  position: fixed;
+  top: 0.625em; /* 10px -> 0.625em assuming base font-size is 16px */
+  right: 0.625em;
+  z-index: 1000;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.glass-btn {
+  width: 4.375em; /* 70px -> 4.375em */
+  height: 4.375em;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.438em; /* 7px -> 0.438em */
+  margin-left: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.glass-btn:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-0.3125em); /* 5px -> 0.3125em */
+  transition: all 0.3s;
+}
+
+.glass-btn img {
+  width: 4.375em;
+  /* border-radius: 100%;
+  border: 0.0625em solid black; */
+}
+
+.glass-btn.blue-btn {
+  -webkit-box-shadow: 0em 1.25em 1.25em -1.0625em rgba(0, 111, 255, 0.53);
+  -moz-box-shadow: 0em 1.25em 1.25em -1.0625em rgba(0, 111, 255, 0.53);
+  box-shadow: 0em 1.25em 1.25em -1.0625em rgba(0, 111, 255, 0.53);
+}
+
+.glass-btn.blue-btn:hover {
+  -webkit-box-shadow: 0em 1.25em 2.1875em -1em rgba(0, 111, 255, 0.65);
+  -moz-box-shadow: 0em 1.25em 2.1875em -1em rgba(0, 111, 255, 0.65);
+  box-shadow: 0em 1.25em 2.1875em -1em rgba(0, 111, 255, 0.65);
+}
+
+.glass-btn.red-btn {
+  -webkit-box-shadow: 0em 1.25em 1.25em -1.0625em rgba(255, 16, 39, 0.5);
+  -moz-box-shadow: 0em 1.25em 1.25em -1.0625em rgba(255, 16, 39, 0.5);
+  box-shadow: 0em 1.25em 1.25em -1.0625em rgba(255, 16, 39, 0.5);
+}
+
+.glass-btn.red-btn:hover {
+  -webkit-box-shadow: 0em 1.25em 2.1875em -1em rgba(255, 16, 39, 0.57);
+  -moz-box-shadow: 0em 1.25em 2.1875em -1em rgba(255, 16, 39, 0.57);
+  box-shadow: 0em 1.25em 2.1875em -1em rgba(255, 16, 39, 0.57);
+}
+
+.glass-btn.amber-btn {
+  -webkit-box-shadow: 0em 1.25em 1.25em -1.0625em rgba(255, 159, 16, 0.53);
+  -moz-box-shadow: 0em 1.25em 1.25em -1.0625em rgba(255, 159, 16, 0.53);
+  box-shadow: 0em 1.25em 1.25em -1.0625em rgba(255, 159, 16, 0.53);
+}
+
+.glass-btn.amber-btn:hover {
+  -webkit-box-shadow: 0em 1.25em 2.1875em -1em rgba(255, 159, 16, 0.6);
+  -moz-box-shadow: 0em 1.25em 2.1875em -1em rgba(255, 159, 16, 0.6);
+  box-shadow: 0em 1.25em 2.1875em -1em rgba(255, 159, 16, 0.6);
+}

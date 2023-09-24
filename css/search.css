@@ -1,0 +1,81 @@
+/* search.css */
+.searchContainer {
+  margin: 2rem auto 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#searchInput {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  width: 50%;
+}
+
+#searchButton {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #24243e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+  background-color: #302b63;
+}
+/* Search Results Container */
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual Song Card */
+.songCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.125rem solid #888;
+  border-radius: 0.5rem;
+  padding: 1.5rem; /* Increased padding */
+  width: 18rem; /* Increased width */
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.songCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.2);
+}
+
+.songTitle {
+  font-weight: bold;
+  font-size: 1.25rem; /* Increased font size */
+  margin-bottom: 1rem;
+}
+
+.songArtist,
+.songFeaturing,
+.songReleaseDate {
+  font-size: 1rem; /* Increased font size */
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.songFeaturing {
+  color: #777;
+}
+
+.songReleaseDate {
+  margin-top: auto;
+  color: #555;
+}
